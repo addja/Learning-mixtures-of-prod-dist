@@ -6,3 +6,7 @@ Files:
   - pd.py: functions related to product distributions
   - fm.py: implementation of the Freund Mansour algorithm
   - sfod.py: implementation of the Serveido Feldman O'Donnell algorithm
+
+Dependencies:
+	- python3
+	- numpy
