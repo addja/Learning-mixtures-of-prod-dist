@@ -6,7 +6,7 @@ from pd import prodDistGen, prodDistSample
 
 # genrate product distribution
 k = 2   # number of product distributions
-n = 20  # lenght of product distributions
+n = 3  # lenght of product distributions
 b = 2   # values prod dist can take
 dist, rates = prodDistGen(k,n,b)
 # print('distribution:',dist,'\n')
@@ -29,4 +29,6 @@ samples = prodDistSample(dist,rates,m)
 
 # apply Serveido Feldman ODonnell algorithm
 # works with k mixtures of b-ary distributions!
-ServeidoFeldmanODonnell()
+epsilon = 0.2
+delta = 0.01
+ServeidoFeldmanODonnell(epsilon,delta,samples,b,k)
