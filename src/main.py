@@ -19,8 +19,14 @@ samples = prodDistSample(dist,rates,m)
 
 # apply Freund Mansour algorithm
 # only for mixtures of two binary product distributions!
-epsilon = 0.1
-delta = 0.01
-FreundMansour(epsilon,delta,samples)
+#epsilon = 0.1
+#delta = 0.01
+#print('Start execution Freund Mansour')
+#adist, arates = FreundMansour(epsilon,delta,samples)
+#print('Original distribution:\n',dist,rates)
+#print('Approximate distribtuion:\n',adist,arates)
+#print('Execution Freund Mansour completed')
 
-# ServeidoFeldmanODonnell()
+# apply Serveido Feldman ODonnell algorithm
+# works with k mixtures of b-ary distributions!
+ServeidoFeldmanODonnell()
